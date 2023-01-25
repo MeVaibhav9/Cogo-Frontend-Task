@@ -1,0 +1,2394 @@
+*{
+    // box-sizing: border-box;
+    // width: 100%;
+    // height: 100%;
+    margin: 0px;
+    padding: 0px;
+    // overflow-x: hidden;
+}
+html{
+    font-size: 1px;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    // overflow-x: hidden;
+}
+
+.main{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100vw;
+    // height: 960px;
+
+    /* Base/White */
+
+    background: #FFFFFF;
+
+    .sidebar{
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        // padding: 0px;
+        // position: fixed;
+        // width: 362px;
+        // height: 960px;
+
+        .content{
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            border-right: 1px solid #EAECF0;
+
+            /* Inside auto layout */
+
+            .nav{
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // padding: 32px 0px 0px;
+                padding: 32rem 0rem 0rem 0rem;
+                gap: 24rem;
+
+                width: 5vw;
+                height: 71vh;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                .header{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0rem 20rem 0rem 24rem;
+
+                    .logomark{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 0px;
+
+                        // width: 32px;
+                        // height: 32px;
+
+                        
+                    }
+                }
+
+                .navigationIcon{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px 16px;
+                    gap: 8px;
+
+                    .navItemButton{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        
+                    }
+                }
+
+
+
+            }
+
+            .footer{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px 16px 29px;
+                gap: 24px;
+
+                .navigation{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 8px;
+
+                    .navItemButton{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 12px;
+                        gap: 8px;
+                    }
+                }
+            }
+        }
+
+        .subNav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 16px;
+
+            width: 281px;
+            // height: 960px;
+
+            .content{
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 36px 16px 0px;
+                gap: 16px;
+
+                width: 281px;
+                height: 380px;
+
+
+                .text{
+                    /* Text */
+
+                    width: 249px;
+                    height: 24px;
+
+                    /* Text md/Medium */
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+
+
+                    /* Gray/900 */
+
+                    color: #101828;
+                }
+
+                .navigation{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 4px;
+
+                    width: 249px;
+                    height: 304px;
+
+
+                    .navItemBase{
+                        /* Auto layout */
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 8px 0px 8px 12px;
+                        gap: 8px;
+
+                        width: 249px;
+                        height: 40px;
+
+                        /* Base/White */
+
+                        background: #FFFFFF;
+                        border-radius: 6px;
+
+                        .innerContent{
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            gap: 12px;
+
+                            width: 225px;
+                            height: 24px;
+
+                            .text{
+                                /* Text */
+                                width: 80px;
+                                height: 24px;
+
+                                /* Text md/Semibold */
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                /* identical to box height, or 150% */
+
+
+                                /* Gray/700 */
+
+                                color: #344054;
+
+                            }
+
+                            .badge{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 2px 8px;
+
+                                width: 30px;
+                                height: 22px;
+
+                                /* Gray/100 */
+
+                                background: #F2F4F7;
+                                mix-blend-mode: multiply;
+                                border-radius: 16px;
+
+
+                                p{
+                                    /* Text */
+
+
+                                    width: 14px;
+                                    height: 18px;
+
+                                    /* Text xs/Medium */
+
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    /* identical to box height, or 150% */
+
+                                    text-align: center;
+
+                                    /* Gray/700 */
+
+                                    color: #344054;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .account{
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 37vh 48px 24px 20px;
+                gap: 47px;
+                isolation: isolate;
+
+
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+
+                    width: 213px;
+                    height: 40px;
+
+                    .title{
+
+                        /* Text sm/Medium */
+
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* identical to box height, or 143% */
+                        height: 20px;
+                        /* Gray/900 */
+
+                        color: #101828;
+                    }
+
+                    .supText{
+
+                        /* Text sm/Regular */
+
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* identical to box height, or 143% */
+                        height: 20px;
+                        /* Gray/600 */
+
+                        color: #475467;
+                    }
+                }
+
+                .logOut{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 8px;
+                    gap: 8px;
+
+                    position: relative;
+                    width: 36px;
+                    height: 36px;
+                    right: 45px;
+                    top: -8px;
+
+                    border-radius: 8px;
+
+                    z-index: 1;
+                }
+            }
+        }
+
+    }
+
+
+    .mainSection{
+        /* Auto layout */
+
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // padding: 0px 0px 48px;
+        gap: 48px;
+
+        width: 77vw;
+        height: 225vh;
+
+        // margin-left: 362px;
+
+        /* Gray/25 */
+
+        background: #FCFCFD;
+
+        .pageHeader{
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+
+            // width: 1078px;
+            width: 80vh;
+            height: 360px;
+
+            .imageWrap{
+                width: 1078px;
+                // height: 240px;
+                order: 0;
+
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+                margin: -40px 0px;
+
+                .image{
+                    position: relative;
+                    height: 240px;
+                    // left: -112px;
+                    // right: -112px;
+                    top: 0px;
+
+                    background: url(images/gradient.png);
+                    order : 0;
+                }
+            }
+
+            .container{
+
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px 32px;
+                gap: 24px;
+
+                width: 1078px;
+                height: 185px;
+
+                // margin-top: -50px;
+
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                // flex-grow: 0;
+
+                .innerContainer{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 24px;
+
+                    width: 1014px;
+                    height: 160px;
+
+                    .profile{
+                        width: 160px;
+                        height: 160px;
+
+                        border-radius: 200px;
+                        
+                        .tick{
+                            position: relative;
+                            width: 32px;
+                            height: 32px;
+                            // right: 4px;
+                            // bottom: 4px;
+
+                            right: -120px;
+                            bottom: -147px;
+                        }
+
+                        .avatar{
+                            position: absolute;
+                        }
+                        
+                    }
+
+                    .content{
+                        /* Auto layout */
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 64px 0px 0px;
+                        gap: 20px;
+
+                        width: 830px;
+                        height: 130px;
+
+                        flex: none;
+                        order: 1;
+                        flex-grow: 1;
+
+                        .heading{
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 0px;
+                            gap: 16px;
+
+                            width: 830px;
+                            height: 66px;
+
+
+                            /* Inside auto layout */
+
+                            flex: none;
+                            order: 1;
+                            align-self: stretch;
+                            flex-grow: 0;
+
+                            .text{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 0px;
+                                gap: 4px;
+
+                                width: 589px;
+                                height: 66px;
+
+
+                                /* Inside auto layout */
+
+                                flex: none;
+                                order: 0;
+                                flex-grow: 1;
+
+                                .title{
+                                    width: 589px;
+                                    height: 38px;
+
+                                    /* Display sm/Semibold */
+
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 30px;
+                                    line-height: 38px;
+                                    /* identical to box height, or 127% */
+
+
+                                    /* Gray/900 */
+
+                                    color: #101828;
+
+
+                                    /* Inside auto layout */
+
+                                    flex: none;
+                                    order: 0;
+                                    align-self: stretch;
+                                    flex-grow: 0;
+                                }
+
+                                .subTitle{
+                                    width: 589px;
+                                    height: 24px;
+
+                                    /* Text md/Regular */
+
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    /* identical to box height, or 150% */
+
+
+                                    /* Gray/600 */
+
+                                    color: #475467;
+
+
+                                    /* Inside auto layout */
+
+                                    flex: none;
+                                    order: 1;
+                                    align-self: stretch;
+                                    flex-grow: 0;
+                                }
+                            }
+
+                            .actions{
+                                /* Actions */
+
+
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding: 0px;
+                                gap: 12px;
+
+                                width: 225px;
+                                height: 40px;
+
+
+                                /* Inside auto layout */
+
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+
+                                .button1{
+                                    box-sizing: border-box;
+
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 10px 16px;
+                                    gap: 8px;
+
+                                    width: 100px;
+                                    height: 40px;
+
+                                    /* Base/White */
+
+                                    background: #FFFFFF;
+                                    /* Gray/300 */
+
+                                    border: 1px solid #D0D5DD;
+                                    /* Shadow/xs */
+
+                                    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                    border-radius: 8px;
+
+                                    /* Inside auto layout */
+
+                                    flex: none;
+                                    order: 2;
+                                    flex-grow: 0;
+
+                                    .icon{
+                                        width: 20px;
+                                        height: 20px;
+
+
+                                        /* Inside auto layout */
+
+                                        flex: none;
+                                        order: 0;
+                                        flex-grow: 0;
+                                    }
+
+                                    .text{
+                                        /* Text */
+
+
+                                        width: 40px;
+                                        height: 20px;
+
+                                        /* Text sm/Semibold */
+
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 143% */
+
+
+                                        /* Gray/700 */
+
+                                        color: #344054;
+
+
+                                        /* Inside auto layout */
+
+                                        flex: none;
+                                        order: 1;
+                                        flex-grow: 0;
+                                    }
+                                }
+
+                                .button2{
+                                    box-sizing: border-box;
+
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 10px 16px;
+                                    gap: 8px;
+
+                                    width: 113px;
+                                    height: 40px;
+
+                                    /* Primary/600 */
+
+                                    background: #7F56D9;
+                                    /* Primary/600 */
+
+                                    border: 1px solid #7F56D9;
+                                    /* Shadow/xs */
+
+                                    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                    border-radius: 8px;
+
+                                    /* Inside auto layout */
+
+                                    flex: none;
+                                    order: 3;
+                                    flex-grow: 0;
+
+                                    .text{
+                                        width: 81px;
+                                        height: 20px;
+
+                                        /* Text sm/Semibold */
+
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 143% */
+
+
+                                        /* Base/White */
+
+                                        color: #FFFFFF;
+
+
+                                        /* Inside auto layout */
+
+                                        flex: none;
+                                        order: 1;
+                                        flex-grow: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .divider{
+                    width: 1014px;
+                    height: 1px;
+
+                    /* Gray/200 */
+
+                    background: #EAECF0;
+                }
+            }
+        }
+
+
+        .section{
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+
+            width: 1078px;
+            height: 1273px;
+
+            .container{
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px 32px;
+                gap: 24px;
+
+                width: 1078px;
+                height: 1273px;
+
+                .form{
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 20px;
+
+                    width: 1014px;
+                    height: 1273px;
+
+                    .content1{
+                        /* Auto layout */
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 32px;
+
+                        width: 1014px;
+                        height: 435px;
+
+                        .text{
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0px;
+
+                            width: 280px;
+                            height: 40px;
+
+                            .title{
+                                width: 280px;
+                                height: 20px;
+
+                                /* Text sm/Medium */
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                /* identical to box height, or 143% */
+
+
+                                /* Gray/700 */
+
+                                color: #344054;
+                            }
+
+                            .subTitle{
+                                width: 280px;
+                                height: 20px;
+
+                                /* Text sm/Regular */
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                /* identical to box height, or 143% */
+
+
+                                /* Gray/600 */
+
+                                color: #475467;
+                            }
+                        }
+
+                        .form1{
+                            box-sizing: border-box;
+
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0px;
+
+                            width: 702px;
+                            height: 435px;
+
+                            /* Base/White */
+
+                            background: #FFFFFF;
+                            /* Gray/200 */
+
+                            border: 1px solid #EAECF0;
+                            /* Shadow/sm */
+
+                            box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+                            border-radius: 12px;
+
+                            .innerContent{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 22px;
+                                gap: 24px;
+
+                                // width: 702px;
+                                // height: 362px;
+
+                                /* Base/White */
+
+                                background: #FFFFFF;
+
+                                .inputFields{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 24px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .inputField{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 0px;
+                                        gap: 6px;
+
+                                        width: 315px;
+                                        height: 70px;
+
+                                        .label{
+                                            width: 72px;
+                                            height: 20px;
+
+                                            /* Text sm/Medium */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+
+                                        }
+
+                                        .inputText{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            padding: 10px 14px;
+                                            gap: 8px;
+
+                                            width: 290px;
+                                            height: 44px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Gray/300 */
+
+                                            border: 1px solid #D0D5DD;
+                                            /* Shadow/xs */
+
+                                            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                            border-radius: 8px;
+                                        }
+                                    }
+                                }
+
+                                .inputField2{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 6px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .label{
+                                        width: 110px;
+                                        height: 20px;
+
+                                        /* Text sm/Medium */
+
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 143% */
+
+
+                                        /* Gray/700 */
+
+                                        color: #344054;
+                                    }
+
+                                    .inputText{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        padding: 10px 14px;
+                                        gap: 8px;
+
+                                        width: 654px;
+                                        height: 44px;
+
+                                        /* Base/White */
+
+                                        background: #FFFFFF;
+                                        /* Gray/300 */
+
+                                        border: 1px solid #D0D5DD;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        p{
+                                            width: 598px;
+                                            height: 24px;
+
+                                            /* Text md/Regular */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 13px;
+                                            line-height: 24px;
+                                            /* identical to box height, or 150% */
+
+
+                                            /* Gray/900 */
+
+                                            color: #101828;
+                                        }
+                                    }
+                                }
+
+                                .avtarFileUp{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 20px;
+
+                                    width: 654px;
+                                    height: 126px;
+
+                                    img{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 0px;
+
+                                        width: 64px;
+                                        height: 64px;
+                                    }
+
+                                    .fileUp{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 0px;
+                                        gap: 16px;
+
+                                        width: 570px;
+                                        height: 126px;
+
+                                        .fileUpBase{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            padding: 16px 0px;
+                                            gap: 4px;
+
+                                            width: 570px;
+                                            height: 126px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Gray/200 */
+
+                                            border: 1px dashed #EAECF0;
+                                            border-radius: 12px;
+
+                                            .content{
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                padding: 0px;
+                                                gap: 12px;
+
+                                                width: 522px;
+                                                height: 94px;
+
+                                                .uploadIcon{
+                                                    width: 40px;
+                                                    height: 40px;
+
+                                                    /* Gray/100 */
+
+                                                    background: #F2F4F7;
+                                                    /* Gray/50 */
+
+                                                    border: 6px solid #F9FAFB;
+                                                    border-radius: 28px;
+                                                }
+
+                                                .text{
+                                                    /* Auto layout */
+
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    padding: 0px;
+                                                    gap: 4px;
+
+                                                    width: 522px;
+                                                    height: 42px;
+
+                                                    .actionText{
+                                                        /* Auto layout */
+
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: center;
+                                                        align-items: flex-start;
+                                                        padding: 0px;
+                                                        gap: 4px;
+
+                                                        width: 522px;
+                                                        height: 20px;
+
+                                                        .button{
+                                                            /* Auto layout */
+
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            padding: 0px;
+                                                            gap: 8px;
+
+                                                            width: 101px;
+                                                            height: 20px;
+
+                                                            p{
+                                                                /* Text */
+
+
+                                                                width: 101px;
+                                                                height: 20px;
+
+                                                                /* Text sm/Semibold */
+
+                                                                font-family: 'Inter';
+                                                                font-style: normal;
+                                                                font-weight: 600;
+                                                                font-size: 14px;
+                                                                line-height: 20px;
+                                                                /* identical to box height, or 143% */
+
+
+                                                                /* Primary/700 */
+
+                                                                color: #6941C6;
+                                                            }
+                                                        }
+
+                                                        p{
+                                                            width: 113px;
+                                                            height: 20px;
+
+                                                            /* Text sm/Regular */
+
+                                                            font-family: 'Inter';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 14px;
+                                                            line-height: 20px;
+                                                            /* identical to box height, or 143% */
+
+
+                                                            /* Gray/600 */
+
+                                                            color: #475467;
+                                                        }
+                                                    }
+
+                                                    .supText{
+                                                        /* Supporting text */
+
+
+                                                        width: 522px;
+                                                        height: 18px;
+
+                                                        /* Text xs/Regular */
+
+                                                        font-family: 'Inter';
+                                                        font-style: normal;
+                                                        font-weight: 400;
+                                                        font-size: 12px;
+                                                        line-height: 18px;
+                                                        /* identical to box height, or 150% */
+
+                                                        text-align: center;
+
+                                                        /* Gray/600 */
+
+                                                        color: #475467;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sectionFooter{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 0px 0px 16px;
+                                gap: 16px;
+
+                                width: 702px;
+                                height: 73px;
+
+                                .divider{
+                                    width: 702px;
+                                    height: 1px;
+
+                                    /* Gray/200 */
+
+                                    background: #EAECF0;
+                                }
+
+                                .footerButtons{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    // padding: 0px 24px;
+                                    gap: 16px;
+
+                                    // width: 702px;
+                                    // height: 40px;
+
+                                    width: 654px;
+                                    height: 40px;
+
+                                    .button1{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 16px;
+                                        gap: 8px;
+
+                                        width: 80px;
+                                        height: 40px;
+
+                                        /* Base/White */
+
+                                        background: #FFFFFF;
+                                        /* Gray/300 */
+
+                                        border: 1px solid #D0D5DD;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        p{
+                                            width: 48px;
+                                            height: 20px;
+
+                                            /* Text sm/Semibold */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+                                        }
+
+                                    }
+
+                                    .button2{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 16px;
+                                        gap: 8px;
+
+                                        width: 132px;
+                                        height: 40px;
+
+                                        /* Primary/600 */
+
+                                        background: #7F56D9;
+                                        /* Primary/600 */
+
+                                        border: 1px solid #7F56D9;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        p{
+                                            width: 97px;
+                                            height: 20px;
+
+                                            /* Text sm/Semibold */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Base/White */
+
+                                            color: #FFFFFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .divider{
+                        width: 1014px;
+                        height: 1px;
+
+                        /* Gray/200 */
+
+                        background: #EAECF0;
+                    }
+                    .content2{
+                        /* Auto layout */
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 32px;
+
+                        width: 1014px;
+                        height: 797px;
+
+                        .text{
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0px;
+
+                            width: 280px;
+                            height: 40px;
+
+                            .title{
+                                width: 280px;
+                                height: 20px;
+
+                                /* Text sm/Medium */
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                /* identical to box height, or 143% */
+
+
+                                /* Gray/700 */
+
+                                color: #344054;
+                            }
+
+                            .subTitle{
+                                width: 280px;
+                                height: 20px;
+
+                                /* Text sm/Regular */
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                /* identical to box height, or 143% */
+
+
+                                /* Gray/600 */
+
+                                color: #475467;
+                            }
+                        }
+
+                        .form2{
+                            box-sizing: border-box;
+
+                            /* Auto layout */
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0px;
+
+                            width: 702px;
+                            height: 797px;
+
+                            /* Base/White */
+
+                            background: #FFFFFF;
+                            /* Gray/200 */
+
+                            border: 1px solid #EAECF0;
+                            /* Shadow/sm */
+
+                            box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+                            border-radius: 12px;
+
+                            .innerContent{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 24px;
+                                gap: 24px;
+
+                                width: 702px;
+                                height: 724px;
+
+                                .section1{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 8px;
+
+                                    width: 654px;
+                                    height: 40px;
+
+                                    .toggleBase{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        padding: 2px;
+
+                                        width: 36px;
+                                        height: 20px;
+
+                                        /* Primary/600 */
+
+                                        background: #7F56D9;
+                                        border-radius: 12px;
+
+                                        .button{
+                                            width: 16px;
+                                            height: 16px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Shadow/sm */
+
+                                            box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+                                            border-radius: 12px;
+                                        }
+                                    }
+
+                                    .text{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 0px;
+
+                                        width: 610px;
+                                        height: 40px;
+
+                                        .title{
+                                            width: 610px;
+                                            height: 20px;
+
+                                            /* Text sm/Medium */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+                                        }
+
+                                        .subTitle{
+                                            width: 610px;
+                                            height: 20px;
+
+                                            /* Text sm/Regular */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/600 */
+
+                                            color: #475467;
+                                        }
+                                    }
+                                }
+
+                                .section2{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 6px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .inputWithLabel{
+                                        .label{
+                                            width: 69px;
+                                            height: 20px;
+
+                                            /* Text sm/Medium */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+                                        }
+
+                                        .input{
+                                            box-sizing: border-box;
+
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: flex-start;
+                                            padding: 0px;
+
+                                            width: 654px;
+                                            height: 44px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Gray/300 */
+
+                                            border: 1px solid #D0D5DD;
+                                            /* Shadow/xs */
+
+                                            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                            border-radius: 8px;
+
+                                            .addOn{
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                padding: 0px 12px 0px 12px;
+
+                                                width: 139px;
+                                                height: 44px;
+
+                                                border-radius: 8px 0px 0px 8px;
+                                                p{
+                                                    width: 113px;
+                                                    height: 24px;
+
+                                                    /* Text md/Regular */
+
+                                                    font-family: 'Inter';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height, or 150% */
+
+
+                                                    /* Gray/600 */
+
+                                                    color: #475467;
+                                                }
+                                            }
+
+                                            .textInput{
+                                                box-sizing: border-box;
+
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                padding: 10px 14px;
+                                                gap: 8px;
+
+                                                width: 515px;
+                                                height: 44px;
+
+                                                /* Base/White */
+
+                                                background: #FFFFFF;
+                                                /* Gray/300 */
+
+                                                border: 1px solid #D0D5DD;
+                                                border-radius: 0px 8px 8px 0px;
+
+                                                .username{
+                                                    width: 487px;
+                                                    height: 24px;
+
+                                                    /* Text md/Regular */
+
+                                                    font-family: 'Inter';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height, or 150% */
+
+
+                                                    /* Gray/900 */
+
+                                                    color: #101828;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .section3{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 6px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .inputWithLabel{
+                                        .label{
+                                            width: 69px;
+                                            height: 20px;
+
+                                            /* Text sm/Medium */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+                                        }
+
+                                        .input{
+                                            box-sizing: border-box;
+
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: flex-start;
+                                            padding: 0px;
+
+                                            width: 654px;
+                                            height: 44px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Gray/300 */
+
+                                            border: 1px solid #D0D5DD;
+                                            /* Shadow/xs */
+
+                                            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                            border-radius: 8px;
+
+                                            .addOn{
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                padding: 0px 12px 0px 12px;
+
+                                                width: 73px;
+                                                height: 44px;
+
+                                                border-radius: 8px 0px 0px 8px;
+                                                p{
+                                                    width: 113px;
+                                                    height: 24px;
+
+                                                    /* Text md/Regular */
+
+                                                    font-family: 'Inter';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height, or 150% */
+
+
+                                                    /* Gray/600 */
+
+                                                    color: #475467;
+                                                }
+                                            }
+
+                                            .textInput{
+                                                box-sizing: border-box;
+
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                padding: 10px 14px;
+                                                gap: 8px;
+
+                                                width: 581px;
+                                                height: 44px;
+
+                                                /* Base/White */
+
+                                                background: #FFFFFF;
+                                                /* Gray/300 */
+
+                                                border: 1px solid #D0D5DD;
+                                                border-radius: 0px 8px 8px 0px;
+
+                                                .website{
+                                                    width: 487px;
+                                                    height: 24px;
+
+                                                    /* Text md/Regular */
+
+                                                    font-family: 'Inter';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height, or 150% */
+
+
+                                                    /* Gray/900 */
+
+                                                    color: #101828;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .section4{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 12px;
+
+                                    width: 654px;
+                                    height: 236px;
+
+                                    .textAreaInputField{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 0px;
+                                        gap: 6px;
+
+                                        width: 654px;
+                                        height: 180px;
+
+                                        .inputWithLabel{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            padding: 0px;
+                                            gap: 6px;
+
+                                            width: 654px;
+                                            height: 154px;
+
+                                            .label{
+                                                width: 77px;
+                                                height: 20px;
+
+                                                /* Text sm/Medium */
+
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                /* identical to box height, or 143% */
+
+
+                                                /* Gray/700 */
+
+                                                color: #344054;
+                                            }
+
+                                            textarea{
+                                                box-sizing: border-box;
+
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: flex-start;
+                                                padding: 12px 14px;
+                                                gap: 8px;
+
+                                                width: 654px;
+                                                height: 128px;
+
+                                                /* Base/White */
+
+                                                background: #FFFFFF;
+                                                /* Gray/300 */
+
+                                                border: 1px solid #D0D5DD;
+                                                /* Shadow/xs */
+
+                                                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                                border-radius: 8px;
+
+
+                                                /* Text md/Regular */
+
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 24px;
+                                                /* or 150% */
+
+
+                                                /* Gray/900 */
+
+                                                color: #101828;
+                                                
+                                            }
+                                        }
+
+                                        .hintText{
+                                            width: 654px;
+                                            height: 20px;
+
+                                            /* Text sm/Regular */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/600 */
+
+                                            color: #475467;
+                                        }
+                                    }
+
+                                    .toolbar{
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        padding: 0px;
+                                        gap: 12px;
+
+                                        width: 654px;
+                                        height: 44px;
+
+                                        .input{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            padding: 10px 14px;
+                                            gap: 8px;
+
+                                            width: 240px;
+                                            height: 24px;
+
+                                            /* Base/White */
+
+                                            background: #FFFFFF;
+                                            /* Gray/300 */
+
+                                            border: 1px solid #D0D5DD;
+                                            /* Shadow/xs */
+
+                                            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                            border-radius: 8px;
+
+                                            .content{
+                                                /* Auto layout */
+
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                padding: 0px;
+                                                gap: 8px;
+
+                                                width: 184px;
+                                                height: 24px;
+
+                                                p{
+                                                    width: 59px;
+                                                    height: 24px;
+
+                                                    /* Text md/Medium */
+
+                                                    font-family: 'Inter';
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    /* identical to box height, or 150% */
+
+
+                                                    /* Gray/900 */
+
+                                                    color: #101828;
+                                                }
+                                            }
+
+                                            .icon{
+                                                padding-left: 50px;
+                                            }
+                                        }
+
+                                        .icons{
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: flex-start;
+                                            padding: 0px;
+                                            gap: 4px;
+
+                                            width: 176px;
+                                            height: 32px;
+                                        }
+                                    }
+                                }
+
+                                .section5{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 6px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .label{
+                                        width: 55px;
+                                        height: 20px;
+
+                                        /* Text sm/Medium */
+
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 143% */
+
+
+                                        /* Gray/700 */
+
+                                        color: #344054;
+                                    }
+
+                                    .input{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        padding: 10px 14px;
+                                        gap: 8px;
+
+                                        width: 654px;
+                                        height: 44px;
+
+                                        /* Base/White */
+
+                                        background: #FFFFFF;
+                                        /* Gray/300 */
+
+                                        border: 1px solid #D0D5DD;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        .content{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            padding: 0px;
+                                            gap: 8px;
+
+                                            width: 598px;
+                                            height: 24px;
+
+                                            .text{
+                                                width: 68px;
+                                                height: 24px;
+
+                                                /* Text md/Medium */
+
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                /* identical to box height, or 150% */
+
+
+                                                /* Gray/900 */
+
+                                                color: #101828;
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                .section6{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 6px;
+
+                                    width: 654px;
+                                    height: 70px;
+
+                                    .label{
+                                        width: 55px;
+                                        height: 20px;
+
+                                        /* Text sm/Medium */
+
+                                        font-family: 'Inter';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        /* identical to box height, or 143% */
+
+
+                                        /* Gray/700 */
+
+                                        color: #344054;
+                                    }
+
+                                    .input{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        padding: 10px 14px;
+                                        gap: 8px;
+
+                                        width: 654px;
+                                        height: 44px;
+
+                                        /* Base/White */
+
+                                        background: #FFFFFF;
+                                        /* Gray/300 */
+
+                                        border: 1px solid #D0D5DD;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        .content{
+                                            /* Auto layout */
+
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            padding: 0px;
+                                            gap: 8px;
+
+                                            width: 598px;
+                                            height: 24px;
+
+                                            .text{
+                                                width: 31px;
+                                                height: 24px;
+
+                                                /* Text md/Medium */
+
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                /* identical to box height, or 150% */
+
+
+                                                /* Gray/900 */
+
+                                                color: #101828;
+                                            }
+
+                                            .supText{
+                                                width: 89px;
+                                                height: 24px;
+
+                                                /* Text md/Regular */
+
+                                                font-family: 'Inter';
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                /* identical to box height, or 150% */
+
+
+                                                /* Gray/600 */
+
+                                                color: #475467;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+
+
+                            .sectionFooter{
+                                /* Auto layout */
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 0px 0px 16px;
+                                gap: 16px;
+
+                                width: 702px;
+                                height: 73px;
+
+                                .divider{
+                                    width: 702px;
+                                    height: 1px;
+
+                                    /* Gray/200 */
+
+                                    background: #EAECF0;
+                                }
+
+                                .footerButtons{
+                                    /* Auto layout */
+
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    // padding: 0px 24px;
+                                    gap: 16px;
+
+                                    // width: 702px;
+                                    // height: 40px;
+
+                                    width: 654px;
+                                    height: 40px;
+
+                                    .button1{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 16px;
+                                        gap: 8px;
+
+                                        width: 80px;
+                                        height: 40px;
+
+                                        /* Base/White */
+
+                                        background: #FFFFFF;
+                                        /* Gray/300 */
+
+                                        border: 1px solid #D0D5DD;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        p{
+                                            width: 48px;
+                                            height: 20px;
+
+                                            /* Text sm/Semibold */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Gray/700 */
+
+                                            color: #344054;
+                                        }
+
+                                    }
+
+                                    .button2{
+                                        box-sizing: border-box;
+
+                                        /* Auto layout */
+
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px 16px;
+                                        gap: 8px;
+
+                                        width: 132px;
+                                        height: 40px;
+
+                                        /* Primary/600 */
+
+                                        background: #7F56D9;
+                                        /* Primary/600 */
+
+                                        border: 1px solid #7F56D9;
+                                        /* Shadow/xs */
+
+                                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                                        border-radius: 8px;
+
+                                        p{
+                                            width: 97px;
+                                            height: 20px;
+
+                                            /* Text sm/Semibold */
+
+                                            font-family: 'Inter';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            /* identical to box height, or 143% */
+
+
+                                            /* Base/White */
+
+                                            color: #FFFFFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        .sidebar{
+            display: none;
+        }
+      }
+}
